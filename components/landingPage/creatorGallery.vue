@@ -70,6 +70,7 @@
               alt="Creator content"
               class="w-full h-full object-cover"
             />
+            
           </div>
         </div>
       </div>
