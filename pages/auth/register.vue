@@ -1,7 +1,7 @@
 <template>
     <div class="">
         <div class="flex ">
-            <div class="w-full">
+            <div class="hidden md:block w-full">
             <testimonial />      
             </div>
             <div class="w-full">

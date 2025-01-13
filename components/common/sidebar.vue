@@ -38,14 +38,15 @@
       <!-- Create Campaign Button -->
       <div class="px-4 mb-4">
         <button 
-          @click="createCampaign"
+          @click="showCreateModal"
           class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-white/10 text-white hover:bg-white/20 transition-colors"
         >
           <PlusIcon class="w-5 h-5" />
           <span>Create a campaign</span>
         </button>
       </div>
-  
+    
+
       <!-- Logout Button -->
       <div class="px-4 mb-6">
         <button 
@@ -60,8 +61,13 @@
   </template>
   
   <script setup>
+  import { ref } from 'vue'
+  import createCampaign from '../dashboard/createCampaign.vue'
   import { HomeIcon, UserIcon, PlusIcon, LogOutIcon } from 'lucide-vue-next'
+  import { defineEmits } from 'vue'
   
+
+  const emit = defineEmits(['close', 'campaignClick'])
   defineProps({
     isSidebarOpen: {
       type: Boolean,
@@ -69,11 +75,26 @@
     }
   })
   
-  const createCampaign = () => {
-    // Implement create campaign logic here
-    console.log('Creating a new campaign')
-  }
-  
+  const isCreateModalOpen = ref(false)
+
+const showCreateModal = () => {
+  isCreateModalOpen.value = true
+}
+
+const closeCreateModal = () => {
+  isCreateModalOpen.value = false
+}
+
+const handleCampaignTypeSelect = (type) => {
+  console.log('Selected campaign type:', type)
+  // Handle campaign type selection
+  // You might want to navigate to a specific form based on the type
+}
+
+const handleCampaignClick = () => {
+  emit('campaignClick')
+}
+
   const logout = () => {
     // Implement logout logic here
     console.log('Logging out')

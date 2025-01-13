@@ -50,14 +50,15 @@
                         </div>
                     </div>
 
-                    <a href="/forgot-password" class="block text-[#8B5CF6] text-sm hover:text-[#7C3AED]">
+                    <a href="/auth/forgotPassword" class="block text-[#8B5CF6] text-sm hover:text-[#7C3AED]">
                         Don't remember your Password?
                     </a>
 
-                    <button type="submit"
+                    <router-link to="/dashboard" class="text-gray-600 hover:text-gray-900"><button type="submit"
                         class="w-full bg-[#8726E1] text-white rounded-full py-3 px-4 font-medium hover:bg-[#7C3AED] transition-colors">
                         Log In
                     </button>
+                </router-link> 
                 </form>
 
                 <p class="text-center mt-6 text-gray-600">

@@ -2,14 +2,14 @@
     <div class="space-y-8">
         <!-- Balance Card -->
         <div class="bg-[#250F39] rounded-[8px] py-12 px-6">
-            <div class="flex items-center justify-between mb-2">
+            <div class="flex-none md:flex  items-center justify-between mb-2">
                 <div class="flex items-center gap-2">
                     <h2 class="text-4xl font-bold text-white">₦1,000.00</h2>
                     <button class="text-white/70 hover:text-white">
                         <EyeIcon class="w-6 h-6" />
                     </button>
                 </div>
-                <button class="px-4 py-2 bg-white/10 text-white rounded-[56px] hover:bg-white/20 transition-colors">
+                <button class="px-4 md:mt-0 mt-4 py-2 bg-white/10 text-white rounded-[56px] hover:bg-white/20 transition-colors">
                     Fund Wallet
                 </button>
             </div>
@@ -35,6 +35,11 @@
                 </button>
             </div>
         </div>
+        <createCampaign
+      :is-open="isCreateModalOpen"
+      @close="closeCreateModal"
+      @select="handleCampaignTypeSelect"
+    />
     </div>
 </template>
 
@@ -42,5 +47,30 @@
 import { ref } from 'vue'
 import campaignTable from '~/components/dashboard/campaignTable.vue';
 import { EyeIcon, PlusIcon } from 'lucide-vue-next'
-const hasCampaigns = ref(true)
+
+
+const props = defineProps({
+  showCampaigns: {
+    type: Boolean,
+    default: false
+  }
+})
+
+
+const hasCampaigns = ref(false)
+const isCreateModalOpen = ref(false)
+
+const showCreateModal = () => {
+  isCreateModalOpen.value = true
+}
+
+const closeCreateModal = () => {
+  isCreateModalOpen.value = false
+}
+
+const handleCampaignTypeSelect = (type) => {
+  console.log('Selected campaign type:', type)
+  // Handle campaign type selection
+  // You might want to navigate to a specific form based on the type
+}
 </script>
