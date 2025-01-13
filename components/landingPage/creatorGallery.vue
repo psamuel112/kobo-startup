@@ -17,60 +17,60 @@
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           <div class="aspect-square rounded-xl overflow-hidden">
             <img 
-              src="../../assets/images/png/rectangle.png" 
+              src="../../assets/images/png/Rectangle.png" 
               alt="Creator content"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-square rounded-xl overflow-hidden">
             <img 
-            src="../../assets/images/png/rectangle.png"  
+            src="../../assets/images/png/Rectangle.png"  
               alt="Creator content"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-square rounded-xl overflow-hidden">
             <img 
-            src="../../assets/images/png/rectangle.png" 
+            src="../../assets/images/png/Rectangle.png" 
               alt="Creator content"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-square rounded-xl overflow-hidden">
             <img 
-            src="../../assets/images/png/rectangle.png" 
+            src="../../assets/images/png/Rectangle.png" 
               alt="Creator content"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-square rounded-xl overflow-hidden">
             <img 
-            src="../../assets/images/png/rectangle.png" 
+            src="../../assets/images/png/Rectangle.png" 
               alt="Creator content"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-square rounded-xl overflow-hidden">
             <img 
-            src="../../assets/images/png/rectangle.png" 
+            src="../../assets/images/png/Rectangle.png" 
               alt="Creator content"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-square rounded-xl overflow-hidden">
             <img 
-            src="../../assets/images/png/rectangle.png" 
+            src="../../assets/images/png/Rectangle.png" 
               alt="Creator content"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="aspect-square rounded-xl overflow-hidden">
             <img 
-            src="../../assets/images/png/rectangle.png" 
+            src="../../assets/images/png/Rectangle.png" 
               alt="Creator content"
               class="w-full h-full object-cover"
             />
-            
+
           </div>
         </div>
       </div>
